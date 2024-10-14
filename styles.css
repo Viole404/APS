@@ -1,0 +1,93 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  padding: 20px;
+}
+
+.app {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.produtos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.produto {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px; /* Bordas arredondadas */
+  padding: 20px;
+  width: 200px;
+  text-align: center;
+  transition: transform 0.2s; /* Transição suave */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra leve */
+}
+
+.produto:hover {
+  transform: scale(1.02); /* Efeito de aumento ao passar o mouse */
+}
+
+.produto img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px; /* Bordas arredondadas nas imagens */
+}
+
+.promocao {
+  color: red;
+  font-weight: bold;
+}
+
+button.comprar,
+button.remover,
+button.editar {
+  border-radius: 5px; /* Bordas arredondadas para os botões */
+  padding: 10px 15px;
+  cursor: pointer;
+  margin-top: 10px;
+  border: none;
+  transition: background-color 0.2s, box-shadow 0.2s; /* Transição suave */
+}
+
+button.comprar {
+  background-color: #007bff; /* Azul */
+  color: white;
+}
+
+button.comprar:hover {
+  background-color: #0056b3; /* Azul mais escuro ao passar o mouse */
+  box-shadow: 0 4px 8px rgba(0, 123, 255, 0.2); /* Sombra ao passar o mouse */
+}
+
+button.remover {
+  background-color: #dc3545; /* Vermelho */
+  color: white;
+}
+
+button.remover:hover {
+  background-color: #c82333; /* Vermelho mais escuro ao passar o mouse */
+  box-shadow: 0 4px 8px rgba(220, 53, 69, 0.2); /* Sombra ao passar o mouse */
+}
+
+button.editar {
+  background-color: #28a745; /* Verde */
+  color: white;
+}
+
+button.editar:hover {
+  background-color: #218838; /* Verde mais escuro ao passar o mouse */
+  box-shadow: 0 4px 8px rgba(40, 167, 69, 0.2); /* Sombra ao passar o mouse */
+}
+
+.carrinho {
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px; /* Bordas arredondadas */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra leve */
+  width: 300px;
+}
